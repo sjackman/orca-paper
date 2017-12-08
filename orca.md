@@ -1,13 +1,14 @@
 ---
 title: "ORCA: A comprehensive bioinformatics container environment for education and research"
-author: [Shaun D Jackman*, Tatyana Mozgacheva*, Brendan O'Huiginn, Lance Bailey, Inanc Birol, Steven JM Jones]
+author: [Shaun D Jackman^\*1^, Tatyana Mozgacheva^\*1^, Brendan O'Huiginn^1^, Lance Bailey^1^, Inanc Birol^1^, Steven JM Jones^1^]
 bibliography: orca.bib
 csl: orca.csl
 keywords: [container, docker, software installation, package manager, open source, reproducible research, high performance computing]
 permalink: /
 ---
 
-\* SDJ and TM are joint first authors and contributed equally.
+| ^\*^ SDJ and TM are joint first authors and contributed equally.
+| ^1^ British Columbia Cancer Agency, Genome Sciences Centre, Vancouver, BC V5Z 4S6, Canada
 
 # Abstract
 
