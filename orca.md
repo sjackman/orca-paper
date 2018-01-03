@@ -53,6 +53,6 @@ ORCA provides a comprehensive bioinformatics container environment, which may be
 
 # Acknowledgements
 
-We thank the developers of the software packages included with ORCA, the developers of the Homebrew and Linuxbrew package managers, and their users who contributed the scripts to package these tools.
+We thank Genome Canada and Genome BC for their financial support. We thank the developers of the software packages included with ORCA, the developers of the Homebrew and Linuxbrew package managers, and their users who contributed the scripts to package these tools.
 
 # References
