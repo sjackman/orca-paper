@@ -5,6 +5,8 @@ bibliography: orca.bib
 csl: orca.csl
 keywords: [container, docker, software installation, package manager, open source, reproducible research, high performance computing]
 permalink: /
+fontsize: 12pt
+geometry: margin=1in
 ---
 
 | ^\*^ SDJ and TM are joint first authors and contributed equally.
