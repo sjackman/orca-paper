@@ -3,7 +3,7 @@ pandoc_opt=-Fpandoc-citeproc
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-all: orca.html
+all: orca.html orca.pdf
 
 clean:
 	rm -f orca.html orca.pdf orca-supp.html orca-supp.pdf
