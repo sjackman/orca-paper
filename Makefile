@@ -16,6 +16,10 @@ orca.csl:
 %.html: %.md %.bib %.csl
 	pandoc $(pandoc_opt) -s -o $@ $<
 
+# Convert Markdown to LaTeX using Pandoc.
+%.tex: %.md %.bib %.csl
+	pandoc $(pandoc_opt) -s -o $@ $<
+
 # Render Markdown to PDF using Pandoc.
 %.pdf: %.md %.bib %.csl
 	pandoc $(pandoc_opt) -o $@ $<
