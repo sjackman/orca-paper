@@ -8,6 +8,14 @@ all: orca.pdf
 clean:
 	rm -f orca.pdf
 
+# Fetch BibTex records from a list of DOI.
+%.doi.bib: %.doi
+	brew cite $$(<$<) | sort >$@
+
+# Concatentate the citations with and without DOI.
+%.bib: %.doi.bib %.other.bib
+	sort $^ | sed 's~http://dx.doi.org~https://doi.org~' >$@
+
 # Download the citation style language (CSL).
 orca.csl:
 	curl -o $@ https://www.zotero.org/styles/bioinformatics
