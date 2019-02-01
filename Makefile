@@ -20,6 +20,10 @@ clean:
 orca.csl:
 	curl -o $@ https://www.zotero.org/styles/bioinformatics
 
+# Download the Bioinformatics LaTeX template.
+cabios-template.zip:
+	curl -L -o $@ https://academic.oup.com/DocumentLibrary/Bioinformatics/cabios-template.zip
+
 # Render Markdown to HTML using Pandoc.
 %.html: %.md %.bib %.csl
 	pandoc $(pandoc_opt) -s -o $@ $<
