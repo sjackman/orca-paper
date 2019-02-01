@@ -1,6 +1,6 @@
 ---
 title: "ORCA: A Comprehensive Bioinformatics Container Environment for Education and Research"
-author: [Shaun D Jackman^\*1^, Tatyana Mozgacheva^\*1^, Susie Chen ^1^, Brendan O'Huiginn^1^, Lance Bailey^1^, Inanc Birol^1^, Steven JM Jones^1#^]
+author: [Shaun D Jackman^\*1^, Tatyana Mozgacheva^\*1^, Susie Chen^1^, Brendan O'Huiginn^1^, Lance Bailey^1^, Inanc Birol^1^, Steven JM Jones^1#^]
 bibliography: orca.bib
 csl: orca.csl
 figPrefix: "Fig."
