@@ -3,7 +3,7 @@ pandoc_opt=-Fpandoc-crossref -Fpandoc-citeproc
 .DELETE_ON_ERROR:
 .SECONDARY:
 
-all: orca.pdf
+all: orca.pdf orca-bioinfo.pdf
 
 clean:
 	rm -f orca.pdf
@@ -39,3 +39,7 @@ cabios-template.zip:
 # Render Markdown to DOCX using Pandoc.
 %.docx: %.md %.bib %.csl
 	pandoc $(pandoc_opt) -o $@ $<
+
+# Render LaTeX to PDF using pdflatex.
+%.pdf: %.tex
+	pdflatex $<
