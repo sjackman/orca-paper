@@ -1,5 +1,12 @@
+*.aux
+*.cls
 *.csl
 *.docx
+*.eps
 *.html
+*.log
+*.out
 *.pdf
+*.zip
+orca.doi.bib
 !figures/architecture.pdf
