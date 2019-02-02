@@ -24,6 +24,11 @@ orca.csl:
 cabios-template.zip:
 	curl -L -o $@ https://academic.oup.com/DocumentLibrary/Bioinformatics/cabios-template.zip
 
+# Extract the Bioinformatics LaTeX template.
+bioinfo.cls: cabios-template.zip
+	unzip -o $< $@ OUP_First_SBk_Bot_8401.eps OUP_First_SBk_Bot_8401-eps-converted-to.pdf
+	touch $@
+
 # Render Markdown to HTML using Pandoc.
 %.html: %.md %.bib %.csl
 	pandoc $(pandoc_opt) -s -o $@ $<
@@ -41,5 +46,5 @@ cabios-template.zip:
 	pandoc $(pandoc_opt) -o $@ $<
 
 # Render LaTeX to PDF using pdflatex.
-%.pdf: %.tex
+%.pdf: %.tex bioinfo.cls
 	pdflatex $<
